@@ -1,0 +1,27 @@
+<suite name="PositiveTests" verbose="1">
+    <test name="AddToCartPositiveTests">
+        <classes>
+            <class name="tests.AddToCartTests">
+                <methods>
+                    <include name="checkThatCartCanBeCleaned"/>
+                    <include name="addElementToCartAndCheckThatElementWasAdded"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="CorrectSortTests">
+        <classes>
+            <class name="tests.CorrectSortTests"/>
+        </classes>
+    </test>
+    <test name="AddToFavoritesTests">
+        <classes>
+            <class name="tests.AddToFavoritesTests"/>
+        </classes>
+    </test>
+    <test name="LoadMoreButtonTest">
+        <classes>
+            <class name="tests.LoadMoreButtonTest"/>
+        </classes>
+    </test>
+</suite>

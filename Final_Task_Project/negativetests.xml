@@ -1,0 +1,27 @@
+<suite name="NegativeTests" verbose="1">
+    <test name="AddToCartNegativeTest">
+        <classes>
+            <class name="tests.AddToCartTests">
+                <methods>
+                    <include name="checkThatCanNotAddElementToCartWithoutChooseSize"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="AuthorizationTestsFirstTest">    <!--Tests are splitted to avoid problems with captcha-->
+        <classes>
+            <class name="tests.AuthorizationTests"/>
+            <methods>
+                <include name="checkThatCanNotSignInWithoutPassword"/>
+            </methods>
+        </classes>
+    </test>
+    <test name="AuthorizationTestsSecondTest">
+        <classes>
+            <class name="tests.AuthorizationTests"/>
+            <methods>
+                <include name="checkThatCanNotSignUpWithoutFilledFields"/>
+            </methods>
+        </classes>
+    </test>
+</suite>
